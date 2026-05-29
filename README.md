@@ -1,34 +1,130 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
+# Real Estate EDA Analysis
 
-Template for creating ds simple projects
+## Overview
 
-## Requirements
+This project focuses on Exploratory Data Analysis (EDA) of a real estate dataset using Python.
 
-- pyenv
-- python==3.11.3
+The goal is to identify relationships between house prices and important property features such as:
 
-## Setup
+* grade
+* zipcode
+* waterfront access
+* view rating
+* living area size
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+The project combines:
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
+* statistical analysis
+* data visualization
+* feature interpretation
+* and client-based business recommendations.
 
-*Note: We do have the `requirements.txt` in the repository but please try to first install packages by yourself.*
+---
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
+## Objectives
 
-```bash
-pip freeze > requirements.txt
-```
+The analysis aims to answer questions such as:
 
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
+* Do houses with higher grades have higher prices?
+* Do waterfront houses cost more?
+* Which zipcodes contain the most expensive houses?
+* Does living area size strongly affect price?
+* Do better view ratings increase property value?
 
+---
 
---- 
-## In Case of Failure
-If you fail to do the setup by yourself, then please revisit the previous repositories where you have done the setup and follow those steps.
+## Client Scenario
+
+A fictional client scenario was included as part of the analysis.
+
+### Client:
+
+Amy Williams
+
+### Scenario:
+
+Amy owns several luxury houses in central premium neighborhoods and wants to identify:
+
+* high-value houses suitable for selling
+* and lower-profile suburban houses suitable for blending into average residential areas.
+
+The project uses assumptions and feature-based reasoning to support recommendations.
+
+---
+
+## Methods Used
+
+### Exploratory Data Analysis (EDA)
+
+* Scatterplots
+* Boxplots
+* Bar charts
+
+### Statistical Analysis
+
+* Mean
+* Median
+* Count
+* Correlation analysis
+
+### Feature Investigation
+
+* Grade
+* Zipcode
+* Waterfront
+* View rating
+* Living area (`sqft_living`)
+
+---
+
+## Tools & Libraries
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+* VS Code
+
+---
+
+## Key Findings
+
+* Houses with higher grades tend to have significantly higher prices.
+* Waterfront properties are substantially more expensive on average.
+* Certain premium zipcodes dominate the luxury market.
+* Larger living areas strongly correlate with higher house prices.
+* Better view ratings generally increase property value.
+
+---
+
+## Assumptions
+
+Some business-related conclusions required assumptions because the dataset does not contain:
+
+* crime statistics
+* demographic information
+* safety metrics
+
+Therefore, neighborhood visibility and luxury level were approximated using:
+
+* average prices
+* grade
+* waterfront access
+* view ratings
+* zipcode pricing
+
+---
+
+## Conclusion
+
+This project demonstrates how EDA can be used to:
+
+* identify market patterns
+* support decision-making
+* compare property segments
+* and transform raw data into actionable insights.
+
+The analysis combines technical implementation with interpretation and business-oriented reasoning.
+
