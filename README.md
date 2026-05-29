@@ -2,59 +2,53 @@
 
 ## Overview
 
-This project focuses on Exploratory Data Analysis (EDA) of a real estate dataset using Python.
+This project explores a real estate dataset using Exploratory Data Analysis (EDA) in Python.
 
-The goal is to identify relationships between house prices and important property features such as:
+The goal was not only to visualize data, but also to use data-driven reasoning for a fictional client scenario.
+
+The analysis focuses on how features such as:
 
 * grade
 * zipcode
-* waterfront access
 * view rating
-* living area size
+* and living area
 
-The project combines:
-
-* statistical analysis
-* data visualization
-* feature interpretation
-* and client-based business recommendations.
-
----
-
-## Objectives
-
-The analysis aims to answer questions such as:
-
-* Do houses with higher grades have higher prices?
-* Do waterfront houses cost more?
-* Which zipcodes contain the most expensive houses?
-* Does living area size strongly affect price?
-* Do better view ratings increase property value?
+influence house prices.
 
 ---
 
 ## Client Scenario
 
-A fictional client scenario was included as part of the analysis.
+The project is based on a fictional client named Amy Williams.
 
-### Client:
+Amy is involved in organized crime and uses luxury real estate for money laundering.
+She needs:
 
-Amy Williams
+* very expensive houses in central premium neighborhoods to move large amounts of money
+* and later a less noticeable house outside the luxury market to hide from the FBI.
 
-### Scenario:
+The objective was to identify:
 
-Amy owns several luxury houses in central premium neighborhoods and wants to identify:
+1. which features define expensive luxury properties
+2. which zipcodes dominate the high-end market
+3. and which houses appear more average and less visible.
 
-* high-value houses suitable for selling
-* and lower-profile suburban houses suitable for blending into average residential areas.
+---
 
-The project uses assumptions and feature-based reasoning to support recommendations.
+## Main Questions
+
+The analysis explored questions such as:
+
+* Do houses with higher grades have higher prices?
+* Which zipcodes contain the most expensive houses?
+* Does living area strongly affect price?
+* Do better view ratings increase property value?
 
 ---
 
 ## Methods Used
 
-### Exploratory Data Analysis (EDA)
+### Visual Analysis
 
 * Scatterplots
 * Boxplots
@@ -64,16 +58,47 @@ The project uses assumptions and feature-based reasoning to support recommendati
 
 * Mean
 * Median
-* Count
 * Correlation analysis
+* Grouped feature comparisons
 
-### Feature Investigation
+---
 
-* Grade
-* Zipcode
-* Waterfront
-* View rating
-* Living area (`sqft_living`)
+## Key Findings
+
+The analysis showed that expensive luxury houses are strongly associated with:
+
+* high grades
+* premium zipcodes
+* better view ratings
+* and large living areas.
+
+Certain zipcodes clearly dominate the luxury market and contain significantly higher average prices than the rest of the dataset.
+
+For Amy’s “hideout strategy”, lower-profile houses with:
+
+* lower grades
+* lower average prices
+* smaller living areas
+* and non-premium zipcodes
+
+appear more suitable for blending into average residential areas.
+
+---
+
+## Assumptions
+
+The dataset does not contain:
+
+* crime statistics
+* demographic information
+* FBI visibility metrics
+* or neighborhood safety data.
+
+Therefore, “visibility” and “luxury level” were approximated using:
+
+* house prices
+* feature quality
+* and zipcode pricing patterns.
 
 ---
 
@@ -89,42 +114,15 @@ The project uses assumptions and feature-based reasoning to support recommendati
 
 ---
 
-## Key Findings
-
-* Houses with higher grades tend to have significantly higher prices.
-* Waterfront properties are substantially more expensive on average.
-* Certain premium zipcodes dominate the luxury market.
-* Larger living areas strongly correlate with higher house prices.
-* Better view ratings generally increase property value.
-
----
-
-## Assumptions
-
-Some business-related conclusions required assumptions because the dataset does not contain:
-
-* crime statistics
-* demographic information
-* safety metrics
-
-Therefore, neighborhood visibility and luxury level were approximated using:
-
-* average prices
-* grade
-* waterfront access
-* view ratings
-* zipcode pricing
-
----
-
 ## Conclusion
 
-This project demonstrates how EDA can be used to:
+This project demonstrates how Exploratory Data Analysis can be used to:
 
-* identify market patterns
-* support decision-making
-* compare property segments
-* and transform raw data into actionable insights.
+* identify housing market patterns
+* compare luxury and average housing segments
+* support fictional client decisions
+* and transform raw housing data into actionable insights.
 
-The analysis combines technical implementation with interpretation and business-oriented reasoning.
+The project combines technical analysis with interpretation and scenario-based reasoning.
+
 
